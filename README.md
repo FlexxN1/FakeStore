@@ -69,8 +69,63 @@ const intersectionObserver = new IntersectionObserver(
 intersectionObserver.observe($observe);
 ```
 
-## License 🔐
+## RETO
 
-Copyright © 2022 [Juan David Moreno](https://github.com/FlexxN1)
+### Primer problema
 
-This project is [MIT](https://choosealicense.com/licenses/mit/) licensed
+1. Analiza la API: fakeapi.platzi.com
+2. Implementa la API de productos iniciando en el producto 5 y obteniendo los siguientes 10 productos.
+3. Guarda en localStorage la posición inicial ("pagination") y actualízala en cada petición nueva para traer los siguientes productos.
+4. Crear la lógica para implementar un scroll infinito con Intersection Observer.
+
+### Segundo Problema
+
+1. Crear la estructura de HTML para mostrar cada producto dentro de Items
+2. Crear un article con la clase "Card" para contener la imagen, título y precio de un producto:
+
+```html
+<article class="Card">
+  <img src="imagen.png" />
+  <h2>
+    Producto
+    <small>$ Precio</small>
+  </h2>
+</article>
+```
+
+3. Index.html debe de cumplir con los elementos mínimos de SEO (title = "PlatziStore", descripcion = "...")
+
+### Tercer Problema
+
+Cuando cerramos la pestaña o recargamos la pagina se debe de volver a mostrar los primeros 10 Productos.
+
+1. Mostrar los primeros 10 productos.
+2. Eliminar el localStorage.
+3. Actualiza la función loadData() a Async/Await.
+
+### Cuarto Problema
+
+La API utilizada "fakeAPI" retorna 200 productos, utilizaremos la paginación propuesta en su documentación para obtener los productos en bloques de 10, cuando la última petición sea ejecutada debes de mostrar un mensaje "Todos los productos Obtenidos", a su vez debes de destruir el intersection observer.
+
+1. Implementar mensaje: "Todos los productos Obtenidos".
+2. Deja de observar el elemento "observe".
+
+### Quinto Problema
+
+Integra un empaquetador (Module Bundler) para optimizar tu proyecto (Webpack, Parcel, Rollup, Vite).
+
+### Sexto Problema (Bonus)
+
+Desplegar la aplicación en alguno de los siguientes servicios: GitHub Pages, Netlify, Vercel.
+
+### Enviar solución de reto
+
+Debes de hacer un "Fork" de este proyecto, revolver los problemas y crear un Pull Request hacia este repositorio.
+
+### Contribuir
+
+Si alguien quiere agregar o mejorar algo, lo invito a colaborar directamente en este repositorio: [laboratorio-fakestore](https://github.com/platzi/laboratorio-fakestore/)
+
+### Licencia
+
+js-challenge se lanza bajo la licencia [MIT](https://opensource.org/licenses/MIT).
