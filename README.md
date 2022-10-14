@@ -69,6 +69,8 @@ const intersectionObserver = new IntersectionObserver(
 intersectionObserver.observe($observe);
 ```
 
-### Licencia
+## License 🔐
 
-js-challenge se lanza bajo la licencia [MIT](https://opensource.org/licenses/MIT).
+Copyright © 2022 [Juan David Moreno](https://github.com/FlexxN1)
+
+This project is [MIT](https://choosealicense.com/licenses/mit/) licensed
